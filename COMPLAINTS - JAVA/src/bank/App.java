@@ -17,6 +17,7 @@ public class App {
 		System.out.println("5.Display all the complaints closed/closed with explanation ");
 		System.out.println("6.Display all the complaints which received a timely response ");
 		System.out.println("7.Display all the complaints which received a timely response ");
+		System.out.println("8.Exit ");
 
 		int option = sc.nextInt();
 		sc.nextLine();
@@ -52,10 +53,16 @@ public class App {
 			String timely_compid = sc.next();
 			fetch.complaintsReceivingTimelyResponse(timely_compid);
 			break;
+		case 8:
+			System.out.println("Exit");
+			String timely_compid = sc.next();
+			fetch.complaintsReceivingTimelyResponse(timely_compid);
+			break;
 		default:
 			System.out.println("Enter valid option");
 
 		}
+		
 		sc.close();
 
 	}
